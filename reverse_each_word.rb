@@ -1,1 +1,5 @@
-reverse_each_word("Hi, how are you")
+def reverse_each_word(sentence)
+  reversed = sentence.split(" ").collect do |word|
+    word.reversed
+  end
+  
